@@ -2,8 +2,11 @@
  * Description: The command line program cluster.cpp takes in one parameter, 
  *              an input filename. The input file specified by the input
  *		filename should describe a distance function (equivalently 
- *		a list of the edges of a complete graph and their edge costs. 
- * 		The program will output the maximum spacing of a 4-clustering. 
+ *		a list of the edges of a complete graph and their edge costs). 
+ * 		The program will output the maximum spacing of a 4-clustering
+ *		by running a variant of Kruskal's MST algorithm. To efficiently 
+ *		check if adding an edge to the MST would create a cycle, we 
+ *		use a union-find data structure.
  */
 
 #include <iostream>
