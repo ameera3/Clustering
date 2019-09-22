@@ -183,7 +183,7 @@ void Graph::merge(Vertex* u, Vertex* v) {
 unsigned int Graph::cluster(unsigned int k) {
 
 	// number of edges in minimum spanning tree
-	// stop when there are k components
+	// stop when there are k-1 components
 	unsigned int treeSize = vertex_map.size() - k + 1;
 
 	// used to count number of edges in current MST
